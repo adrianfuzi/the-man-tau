@@ -1,0 +1,53 @@
+.header {
+    font-family: 'Amatic SC', cursive;
+    height: 9rem;
+    background-color: var(--color-primary);
+    z-index: 100;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 5rem;
+        padding: .8rem 4rem;
+        font-weight: 700;
+        cursor: pointer;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 4rem;
+            padding-left: 1rem;
+        }
+    }
+
+    &__social {
+        list-style: none;
+        display: flex;
+
+        &-item {
+            padding: 3rem 2rem;
+            transition: filter 0.2s;
+
+            @media only screen and (max-width: $bp-small) {
+                padding: 3rem 1rem;
+            }
+        }
+
+        &-item:hover {
+            filter: invert(100%);
+        }
+
+        &-icon {
+            height: 3rem;
+            fill: var(--color-secondary-dark);
+
+            @media only screen and (max-width: $bp-small) {
+                height: 1.5rem;
+            }
+        }
+    }
+}

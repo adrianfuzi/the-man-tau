@@ -1,0 +1,112 @@
+.body {
+    @media only screen and (max-width: $bp-sm-medium) {
+        background-color: var(--color-primary);
+     }
+}
+
+.form {
+    text-align: center;
+
+    &__wrapper {
+        max-width: 100rem;
+        margin: 8rem auto;
+        padding: 5rem;
+        background-color: var(--color-primary);
+
+        clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
+
+        @media only screen and (max-width: $bp-large) {
+            max-width: 90rem;
+         }
+
+        @media only screen and (max-width: $bp-medium) {
+            max-width: 70rem;
+         }
+
+        @media only screen and (max-width: $bp-sm-medium) {
+            padding-top: 0rem;
+            margin: 0rem auto;
+            clip-path: none;
+         }
+        
+    }
+
+    &__title {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 3rem;
+        margin: 4rem 0 4rem;
+
+        @media only screen and (max-width: $bp-sm-medium) {
+            font-size: 3rem;
+         }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 2rem;
+         }
+    }
+
+    &__group {
+        margin-bottom: .5rem;
+    }
+
+    &__input {
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: inherit;
+        padding: 1rem 2rem;
+        border-radius: 2px;
+        background-color: #fff;
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 65%;
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-sm-medium) {
+            font-size: 1.2rem;
+            width: 80%;
+         }
+     
+         @media only screen and (max-width: $bp-small) {
+             width: 100%;
+         }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem var(--color-secondary-light);
+            border-bottom: 3px solid var(--color-indicator-clear);
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid var(--color-indicator-caution);
+        }
+
+        &::-webkit-input-placeholder {
+            color: var(--color-grey-dark-3);
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        margin: 0 auto;
+        border: none;
+        background: none;
+        color: var(--color-secondary-dark);
+        font-family: inherit;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        margin-bottom: 4rem;
+        transition: filter 0.2s;
+        cursor: pointer;
+    
+        &:hover {
+            filter: invert(100%);
+        }
+
+        
+        @media only screen and (max-width: $bp-sm-medium) {
+            font-size: 1.4rem;
+         }
+    }
+}

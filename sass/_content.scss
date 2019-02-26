@@ -1,0 +1,85 @@
+.section {
+    font-size: 3.5rem;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-sm-medium) {
+       font-size: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 2.5rem;
+    }
+
+    &__title {
+        text-transform: uppercase;
+    }
+
+    &__content {
+        justify-content: space-around;
+        margin: 1rem 0rem 14rem 0rem;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-card {
+            max-width: 38.7rem;
+            margin-top: 6rem;
+            font-size: 1.8rem;
+            box-shadow: 0 1.5rem 4rem var(--color-secondary-light, .15);
+            transition: transform .3s;
+
+            flex-direction: column;
+
+            @media only screen and (max-width: $bp-large) {
+                max-width: 30.7rem;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                margin: 2rem;
+                max-width: 55.7rem;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                max-width: 25.7rem;
+                font-size: 1.3rem;
+            }
+        }
+
+        &-card:hover {
+            transform: translateY(-1.5rem) scale(1.03);
+
+            @media only screen and (max-width: $bp-large) {
+                transform: none;
+            }
+        }
+    }
+
+    &__text {
+        text-align: justify;
+        font-family: 'Josefin Sans', sans-serif;;
+        font-size: 2.5rem;
+        padding: 0 26rem 0 26rem;
+
+        @media only screen and (max-width: $bp-large) {
+            padding: 0 16rem 0 16rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: 0 13rem 0 13rem;
+        }
+
+        @media only screen and (max-width: $bp-sm-medium) {
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.6rem;
+            padding: 0 3rem 0 3rem;
+        }
+    }
+}

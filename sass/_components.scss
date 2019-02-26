@@ -1,0 +1,19 @@
+.iframe {
+    height: 20rem;
+    width: 38.7rem;
+    border-bottom: .5px solid var(--color-secondary-light);
+
+    @media only screen and (max-width: $bp-large) {
+        width: 30.7rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        width: 55.7rem;
+        height: 30rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        max-width: 25.7rem;
+        height: 15rem;
+    }
+}

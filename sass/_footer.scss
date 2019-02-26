@@ -1,0 +1,77 @@
+.footer {
+    height: 30rem;
+    background-color: var(--color-secondary-dark);
+
+    clip-path: polygon(100% 0, 0 15%, 0 100%, 100% 100%);
+    
+    @media only screen and (max-width: $bp-small) {
+        height: 24rem;
+        clip-path: polygon(100% 20%, 0 27%, 0 100%, 100% 100%);
+    }
+
+    &__contact {
+        text-transform: uppercase;
+        padding-top: 4.5em;
+        font-size: 2.2rem;
+        text-align: center;
+        color: var(--color-secondary-light);
+
+         @media only screen and (max-width: $bp-small) {
+            font-size: 1.6rem;
+            padding-top: 10rem;
+         }
+
+        &-icon {
+            width: 5.5rem;
+            transition: filter 0.2s;
+
+            display: inline-block;
+
+         @media only screen and (max-width: $bp-small) {
+            width: 3.5rem;
+         }
+        }
+
+        &-icon:hover {
+            filter: invert(100%);
+        }
+    }
+
+    &__contact::after {
+        content: '';
+        display: block;
+        width: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: .75rem;
+        border-bottom: .5px solid var(--color-secondary-light);
+
+        @media only screen and (max-width: $bp-large) {
+            width: 20%;
+         }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 25%;
+         }
+
+        @media only screen and (max-width: $bp-sm-medium) {
+            width: 30%;
+         }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 40%;
+         }
+    }
+
+    &__copyright {
+        text-transform: uppercase;
+        padding-top: 4.5em;
+        font-size: 1.2rem;
+        text-align: center;
+        color: var(--color-secondary-light);
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: .7rem;
+         }
+    }
+}

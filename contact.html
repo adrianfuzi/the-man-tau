@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Man Tau - Get in Touch</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Josefin+Sans:100,400" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    </head>
+
+    <body class="body">
+        <main class="form__wrapper">
+            <div id="" class="form__title">get in touch</div>
+                <form method="post" action="contact.php" class="form">
+                    <div id="error"></div>
+                    <div class="form__group">
+                        <input type="text" class="form__input" placeholder="Your Name" name="name" required>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="email" class="form__input" placeholder="Your Email" name="email" required>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="text" class="form__input" placeholder="Subject" name="subject" required>
+                    </div>
+
+                    <div class="form__group">
+                        <textarea class="form__input" placeholder="Your Message" rows="3" name="message"></textarea>
+                    </div>
+                    <button type="submit" name="submit" class="form__btn">send message</button>
+                </form>
+        </main>
+    </body>
+
+</html>
