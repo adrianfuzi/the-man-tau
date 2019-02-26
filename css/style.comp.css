@@ -31,6 +31,9 @@ a {
   color: inherit;
   text-decoration: none; }
 
+::selection {
+  background: var(--color-primary-dark); }
+
 .iframe {
   height: 20rem;
   width: 38.7rem;
