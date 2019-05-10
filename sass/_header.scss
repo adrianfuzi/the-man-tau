@@ -11,16 +11,22 @@
     display: flex;
     justify-content: space-between;
 
+    &__toggle {
+        margin-top: 3rem;
+    }
+
     &__title {
+        //color: var(--color-secondary-text);
         text-transform: uppercase;
         font-size: 5rem;
-        padding: .8rem 4rem;
+        padding: .8rem 7rem;
         font-weight: 700;
         cursor: pointer;
 
         @media only screen and (max-width: $bp-small) {
-            font-size: 4rem;
+            font-size: 3.6rem;
             padding-left: 1rem;
+            padding-right: 1.5rem;
         }
     }
 
@@ -43,7 +49,7 @@
 
         &-icon {
             height: 3rem;
-            fill: var(--color-secondary-dark);
+            fill: var(--color-secondary-text);
 
             @media only screen and (max-width: $bp-small) {
                 height: 1.5rem;

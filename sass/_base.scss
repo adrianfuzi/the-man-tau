@@ -1,11 +1,30 @@
 :root {
     --color-primary-light: #F8F8F8;
+    --color-primary-img-overlay: #F8F8F8;
     --color-primary: #EDEDED;
     --color-primary-dark: #D8D8D8;
     
     --color-secondary-light: #727272;
     --color-secondary: #434343;
     --color-secondary-dark: #2E2E2E;
+    --color-secondary-text: #2E2E2E;
+    --color-secondary-toggle: #D8D8D8;
+
+    --color-indicator-clear: #1C7B11;
+    --color-indicator-caution: #7B111C;
+}
+
+:root[data-theme='dark'] {
+    --color-primary-light: #434343;
+    --color-primary-img-overlay: #D8D8D8;
+    --color-primary:#2E2E2E;
+    --color-primary-dark: #D8D8D8;
+    
+    --color-secondary-light: #434343;
+    //--color-secondary: #434343;
+    --color-secondary-dark: #242424;
+    --color-secondary-text: #D8D8D8;
+    --color-secondary-toggle: #2E2E2E;
 
     --color-indicator-clear: #1C7B11;
     --color-indicator-caution: #7B111C;
@@ -32,10 +51,18 @@ html {
     font-size: 62.5%; //1rem = 10px, 10px/16px = 62.5%
 }
 
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+    transition: all 250ms !important;
+    transition-delay: 0 !important;
+}
+
 body {
     font-family: 'Josefin Sans', sans-serif;
     line-height: 1.6;
-    color: var(--color-secondary-dark);
+    color: var(--color-secondary-text);
     background-color: var(--color-primary-light);
 }
 
