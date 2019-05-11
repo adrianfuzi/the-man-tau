@@ -29,7 +29,7 @@ label {
     text-indent: -9999px;
     width: 4.2rem;
     height: 1.7rem;
-    background: var(--color-secondary-text);
+    background: var(--color-text-icons);
     float: right;
     border-radius: 100px;
     position: relative;
@@ -42,13 +42,13 @@ label::after {
     left: 3px;
     width: 1.1rem;
     height: 1.1rem;
-    background: var(--color-secondary-toggle);
+    background: var(--color-toggle);
     border-radius: 90px;
     transition: 0.3s;
 }
 
 input:checked + label {
-    background: var(--color-secondary-text);
+    background: var(--color-text-icons);
 }
 
 input:checked + label:after {

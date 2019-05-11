@@ -1,7 +1,7 @@
 .header {
     font-family: 'Amatic SC', cursive;
     height: 9rem;
-    background-color: var(--color-primary);
+    background-color: var(--color-header);
     z-index: 100;
 
     position: fixed;
@@ -49,7 +49,7 @@
 
         &-icon {
             height: 3rem;
-            fill: var(--color-secondary-text);
+            fill: var(--color-text-icons);
 
             @media only screen and (max-width: $bp-small) {
                 height: 1.5rem;

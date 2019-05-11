@@ -1,6 +1,6 @@
 .footer {
     height: 30rem;
-    background-color: var(--color-secondary-dark);
+    background-color: var(--color-footer);
 
     clip-path: polygon(100% 0, 0 15%, 0 100%, 100% 100%);
     
@@ -14,7 +14,7 @@
         padding-top: 4.5em;
         font-size: 2.2rem;
         text-align: center;
-        color: var(--color-secondary-light);
+        color: var(--color-footer-text);
 
          @media only screen and (max-width: $bp-small) {
             font-size: 1.6rem;
@@ -44,7 +44,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: .75rem;
-        border-bottom: .5px solid var(--color-secondary-light);
+        border-bottom: .5px solid var(--color-copyright);
 
         @media only screen and (max-width: $bp-large) {
             width: 20%;
@@ -68,7 +68,7 @@
         padding-top: 4.5em;
         font-size: 1.2rem;
         text-align: center;
-        color: var(--color-secondary-light);
+        color: var(--color-copyright);
 
         @media only screen and (max-width: $bp-small) {
             font-size: .7rem;

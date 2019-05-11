@@ -1,6 +1,6 @@
 .body {
     @media only screen and (max-width: $bp-sm-medium) {
-        background-color: var(--color-primary);
+        background-color: var(--color-background);
      }
 }
 
@@ -11,7 +11,7 @@
         max-width: 100rem;
         margin: 8rem auto;
         padding: 5rem;
-        background-color: var(--color-primary);
+        background-color: var(--color-header);
 
         clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
 
@@ -74,7 +74,7 @@
 
         &:focus {
             outline: none;
-            box-shadow: 0 1rem 2rem var(--color-secondary-light);
+            box-shadow: 0 1rem 2rem var(--color-shadow);
             border-bottom: 3px solid var(--color-indicator-clear);
         }
 
@@ -83,7 +83,7 @@
         }
 
         &::-webkit-input-placeholder {
-            color: var(--color-grey-dark-3);
+            color: var(--color-shadow);
         }
     }
 
@@ -92,7 +92,7 @@
         margin: 0 auto;
         border: none;
         background: none;
-        color: var(--color-secondary-dark);
+        color: var(--color-text-icons);
         font-family: inherit;
         text-transform: uppercase;
         font-size: 1.7rem;
