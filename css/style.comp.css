@@ -319,7 +319,7 @@ label:active:after {
 
 @media only screen and (max-width: 48em) {
   .body {
-    background-color: var(--color-background); } }
+    background-color: var(--color-header); } }
 
 .form {
   text-align: center; }
