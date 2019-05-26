@@ -203,7 +203,7 @@ label:active:after {
     clip-path: polygon(0 0%, 255% 0, 0 100%, 0 0); }
     @media only screen and (max-width: 39.375em) {
       .nav__list {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         clip-path: polygon(0 0%, 255% 0, 0 60%, 0 0); } }
     .nav__list-sticky {
       position: fixed;
