@@ -33,6 +33,11 @@ label {
     float: right;
     border-radius: 100px;
     position: relative;
+
+    @media only screen and (max-width: $bp-small) {
+        width: 2.8rem;
+        height: 1.13rem;
+    }
 }
 
 label::after {
@@ -45,6 +50,13 @@ label::after {
     background: var(--color-toggle);
     border-radius: 90px;
     transition: 0.3s;
+
+    @media only screen and (max-width: $bp-small) {
+        width: 0.73rem;
+        height: 0.73rem;
+        top: 2px;
+        left: 2px;
+    }
 }
 
 input:checked + label {
@@ -58,4 +70,8 @@ input:checked + label:after {
 
 label:active:after {
     width: 3.6rem;
+
+    @media only screen and (max-width: $bp-small) {
+        width: 2.4rem;
+    }
 }
