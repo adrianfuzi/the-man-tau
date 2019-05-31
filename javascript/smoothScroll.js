@@ -1,24 +1,24 @@
 $(".music").click(function() {
     $('html, body').animate({
-        scrollTop: $("#music").offset().top-180
+        scrollTop: $("#music").offset().top-100
     }, 500);
 });
 
 $(".discography").click(function() {
     $('html, body').animate({
-        scrollTop: $("#discography").offset().top-180
+        scrollTop: $("#discography").offset().top-100
     }, 500);
 });
 
 $('.events').click(function() {
     $('html, body').animate({
-        scrollTop: $("#events").offset().top-180
+        scrollTop: $("#events").offset().top-100
     }, 500);
 });
 
 $('.about').click(function() {
     $('html, body').animate({
-        scrollTop: $("#about").offset().top-180
+        scrollTop: $("#about").offset().top-100
     }, 500);
 });
 

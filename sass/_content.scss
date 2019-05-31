@@ -12,6 +12,14 @@
 
     &__title {
         text-transform: uppercase;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 70%;
+            margin: -9rem auto 10rem auto;
+            border-bottom: .5px solid var(--color-copyright);
+        }
     }
 
     &__content {

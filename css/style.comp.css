@@ -232,6 +232,12 @@ label:active:after {
       font-size: 2.5rem; } }
   .section__title {
     text-transform: uppercase; }
+    .section__title::before {
+      content: '';
+      display: block;
+      width: 70%;
+      margin: -9rem auto 10rem auto;
+      border-bottom: 0.5px solid var(--color-copyright); }
   .section__content {
     justify-content: space-around;
     margin: 1rem 0rem 14rem 0rem;
