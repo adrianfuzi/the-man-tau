@@ -29,6 +29,25 @@
         display: flex;
         flex-wrap: wrap;
 
+        &-wrapper {
+            justify-content: space-evenly;
+
+            display: flex;
+            flex-wrap: wrap;
+
+            @media only screen and (min-width: $bp-xxl) {
+                max-width: 45vw;
+            }
+
+            @media only screen and (max-width: $bp-xxl) {
+                max-width: 60vw;
+            }
+
+            @media only screen and (max-width: $bp-xl) {
+                max-width: 70vw;
+            }
+        }
+
         @media only screen and (max-width: $bp-medium) {
             flex-direction: column;
             align-items: center;

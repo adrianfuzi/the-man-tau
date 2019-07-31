@@ -243,6 +243,19 @@ label:active:after {
     margin: 1rem 0rem 14rem 0rem;
     display: flex;
     flex-wrap: wrap; }
+    .section__content-wrapper {
+      justify-content: space-evenly;
+      display: flex;
+      flex-wrap: wrap; }
+      @media only screen and (min-width: 120em) {
+        .section__content-wrapper {
+          max-width: 45vw; } }
+      @media only screen and (max-width: 120em) {
+        .section__content-wrapper {
+          max-width: 60vw; } }
+      @media only screen and (max-width: 95.25em) {
+        .section__content-wrapper {
+          max-width: 70vw; } }
     @media only screen and (max-width: 57.5em) {
       .section__content {
         flex-direction: column;
