@@ -162,7 +162,7 @@ label:active:after {
       transition: filter 0.2s; }
       @media only screen and (max-width: 39.375em) {
         .header__social-item {
-          padding: 3rem 1rem; } }
+          padding: 3rem .7rem; } }
     .header__social-item:hover {
       filter: invert(100%); }
     .header__social-icon {
@@ -239,7 +239,7 @@ label:active:after {
       margin: -9rem auto 10rem auto;
       border-bottom: 0.5px solid var(--color-copyright); }
   .section__content {
-    justify-content: space-around;
+    justify-content: center;
     margin: 1rem 0rem 14rem 0rem;
     display: flex;
     flex-wrap: wrap; }
@@ -263,14 +263,18 @@ label:active:after {
     .section__content-card {
       max-width: 38.7rem;
       max-height: 46.8rem;
-      margin-top: 6rem;
+      margin: 6rem 2rem;
       font-size: 1.8rem;
       box-shadow: 0 1.5rem 4rem var(--color-shadow, 0.15);
       transition: transform .3s;
       flex-direction: column; }
+      @media only screen and (max-width: 39.375em) {
+        .section__content-card:last-child {
+          margin-bottom: 7rem; } }
       @media only screen and (max-width: 72.375em) {
         .section__content-card {
-          max-width: 30.7rem; } }
+          max-width: 30.7rem;
+          margin: 6rem 4rem; } }
       @media only screen and (max-width: 57.5em) {
         .section__content-card {
           margin: 2rem;
