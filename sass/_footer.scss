@@ -7,6 +7,7 @@
     @media only screen and (max-width: $bp-small) {
         height: 24rem;
         clip-path: polygon(100% 20%, 0 27%, 0 100%, 100% 100%);
+        margin-top: -10rem;
     }
 
     &__contact {

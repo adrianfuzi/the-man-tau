@@ -13,6 +13,9 @@
     
     --color-indicator-clear: #1C7B11;
     --color-indicator-caution: #7B111C;
+
+    --color-mute-unmute: invert(20%);
+    --color-mute-unmute-hover: invert(80%);
 }
 
 :root[data-theme='dark'] {
@@ -26,6 +29,9 @@
     --color-text-icons: #D8D8D8;
     --color-footer-text: #989898;
     --color-copyright: #6A6A6A;
+
+    --color-mute-unmute: invert(80%);
+    --color-mute-unmute-hover: invert(20%);
 } 
 
 

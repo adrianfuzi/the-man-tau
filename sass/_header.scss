@@ -1,16 +1,15 @@
 .header {
-    font-family: 'Amatic SC', cursive;
-    height: 9rem;
-    background-color: var(--color-header);
-    z-index: 100;
-
-    position: fixed;
-    width: 100%;
-    top: 0;
-
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 9rem;
+    font-family: 'Amatic SC', cursive;
+    background-color: var(--color-header);
 
+    z-index: 100;
+    
     &__toggle {
         position: fixed;
         margin-top: 4rem;
@@ -23,7 +22,6 @@
     }
 
     &__title {
-        //color: var(--color-secondary-text);
         text-transform: uppercase;
         font-size: 5rem;
         padding: .8rem 0 .8rem 7rem;
