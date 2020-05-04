@@ -1,6 +1,6 @@
 $(".music").click(function() {
     $('html, body').animate({
-        scrollTop: $("#music").offset().top-100
+        scrollTop: $("#music").offset().top-95
     }, 500);
 });
 
