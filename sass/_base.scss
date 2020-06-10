@@ -1,39 +1,38 @@
 :root {
-    --color-background: #F8F8F8;
-    --color-img-overlay: #F7F7F7;
-    --color-header: #EDEDED;
-    --color-toggle: #EDEDED;
-    --color-shadow: #727272;
-    --color-footer: #2E2E2E;
-    
-    --color-text-icons: #2E2E2E;
-    --color-footer-text: #BFBFBF;
-    --color-copyright: #858585;
-    --color-selection: #9999;
-    
-    --color-indicator-clear: #1C7B11;
-    --color-indicator-caution: #7B111C;
+  --color-background: #f8f8f8;
+  --color-img-overlay: #f7f7f7;
+  --color-header: #ededed;
+  --color-toggle: #ededed;
+  --color-shadow: #727272;
+  --color-footer: #2e2e2e;
 
-    --color-mute-unmute: invert(20%);
-    --color-mute-unmute-hover: invert(80%);
+  --color-text-icons: #2e2e2e;
+  --color-footer-text: #bfbfbf;
+  --color-copyright: #858585;
+  --color-selection: #9999;
+
+  --color-indicator-clear: #1c7b11;
+  --color-indicator-caution: #7b111c;
+
+  --color-mute-unmute: invert(20%);
+  --color-mute-unmute-hover: invert(80%);
 }
 
-:root[data-theme='dark'] {
-    --color-background: #434343;
-    --color-img-overlay: #D8D8D8;
-    --color-header: #2E2E2E;
-    --color-toggle: #2E2E2E;
-    --color-shadow: #212121;
-    --color-footer: #242424;
-    
-    --color-text-icons: #D8D8D8;
-    --color-footer-text: #989898;
-    --color-copyright: #6A6A6A;
+:root[data-theme="dark"] {
+  --color-background: #434343;
+  --color-img-overlay: #d8d8d8;
+  --color-header: #2e2e2e;
+  --color-toggle: #2e2e2e;
+  --color-shadow: #212121;
+  --color-footer: #242424;
 
-    --color-mute-unmute: invert(80%);
-    --color-mute-unmute-hover: invert(20%);
-} 
+  --color-text-icons: #d8d8d8;
+  --color-footer-text: #989898;
+  --color-copyright: #6a6a6a;
 
+  --color-mute-unmute: invert(80%);
+  --color-mute-unmute-hover: invert(20%);
+}
 
 $bp-xxl: 120em; // 1920px
 $bp-xl: 95.25em; // 1524px
@@ -43,41 +42,41 @@ $bp-sm-medium: 48em; // 768px
 $bp-small: 39.375em; // 630px
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; //1rem = 10px, 10px/16px = 62.5%
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px, 10px/16px = 62.5%
 }
 
 html.transition,
 html.transition *,
 html.transition *:before,
 html.transition *:after {
-    transition: all 250ms !important;
-    transition-delay: 0 !important;
+  transition: all 250ms !important;
+  transition-delay: 0 !important;
 }
 
 body {
-    font-family: 'Josefin Sans', sans-serif;
-    line-height: 1.6;
-    color: var(--color-text-icons);
-    background-color: var(--color-background);
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.6;
+  color: var(--color-text-icons);
+  background-color: var(--color-background);
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 ::selection {
-    background: var(--color-selection);
-  }
+  background: var(--color-selection);
+}

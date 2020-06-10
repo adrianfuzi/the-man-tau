@@ -1,36 +1,35 @@
 .hero {
-    position: relative;
-    top: 8.5rem;
-    height: calc(100vh - 7rem);
-    
-    background-image: url('../images/img1.jpg');
-    background-color: var(--color-img-overlay);
-    background-blend-mode: multiply;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 65.4rem;
+  position: relative;
+  top: 8.5rem;
+  height: calc(100vh - 7rem);
 
-    // z-index: -1;
+  background-image: url("../images/img1.jpg");
+  background-color: var(--color-img-overlay);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65.4rem;
+
+  // z-index: -1;
+
+  @media only screen and (max-width: $bp-large) {
+    height: 65.4rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    background-size: 30.9rem;
+  }
+
+  &__image {
+    height: calc(100vh - 15rem);
+    width: 100%;
 
     @media only screen and (max-width: $bp-large) {
-        height: 65.4rem;
+      display: none;
     }
+  }
 
-    @media only screen and (max-width: $bp-small) {
-        background-size: 30.9rem;
-    }
-    
-    &__image {
-        height: calc(100vh - 15rem);
-        width: 100%;
-
-        @media only screen and (max-width: $bp-large) {
-            display: none;
-        }
-    }
-
-    @media only screen and (max-width: $bp-small) {
-        height: 30.5rem;
-    }
-
+  @media only screen and (max-width: $bp-small) {
+    height: 30.5rem;
+  }
 }

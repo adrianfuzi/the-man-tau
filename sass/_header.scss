@@ -1,69 +1,69 @@
 .header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 9rem;
+  font-family: "Amatic SC", cursive;
+  background-color: var(--color-header);
+
+  z-index: 100;
+
+  &__toggle {
     position: fixed;
-    top: 0;
-    width: 100%;
-    height: 9rem;
-    font-family: 'Amatic SC', cursive;
-    background-color: var(--color-header);
+    margin-top: 4rem;
+    margin-left: 22rem;
 
-    z-index: 100;
-    
-    &__toggle {
-        position: fixed;
-        margin-top: 4rem;
-        margin-left: 22rem;
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 3rem;
+      margin-left: 11rem;
+    }
+  }
 
-        @media only screen and (max-width: $bp-small) {
-            margin-top: 3rem;
-            margin-left: 11rem;
-        }
+  &__title {
+    text-transform: uppercase;
+    font-size: 5rem;
+    padding: 0.8rem 0 0.8rem 7rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 3.6rem;
+      padding-left: 1rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  &__social {
+    list-style: none;
+    display: flex;
+    padding-right: 7rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding-right: 1rem;
     }
 
-    &__title {
-        text-transform: uppercase;
-        font-size: 5rem;
-        padding: .8rem 0 .8rem 7rem;
-        font-weight: 700;
-        cursor: pointer;
+    &-item {
+      padding: 3rem 2rem;
+      transition: filter 0.2s;
 
-        @media only screen and (max-width: $bp-small) {
-            font-size: 3.6rem;
-            padding-left: 1rem;
-            padding-right: 1.5rem;
-        }
+      @media only screen and (max-width: $bp-small) {
+        padding: 3rem 0.7rem;
+      }
     }
 
-    &__social {
-        list-style: none;
-        display: flex;
-        padding-right: 7rem;
-
-        @media only screen and (max-width: $bp-medium) {
-            padding-right: 1rem;
-        }
-
-        &-item {
-            padding: 3rem 2rem;
-            transition: filter 0.2s;
-
-            @media only screen and (max-width: $bp-small) {
-                padding: 3rem .7rem;
-            }
-        }
-
-        &-item:hover {
-            filter: invert(100%);
-        }
-
-        &-icon {
-            height: 3rem;
-            fill: var(--color-text-icons);
-
-            @media only screen and (max-width: $bp-small) {
-                height: 1.5rem;
-            }
-        }
+    &-item:hover {
+      filter: invert(100%);
     }
+
+    &-icon {
+      height: 3rem;
+      fill: var(--color-text-icons);
+
+      @media only screen and (max-width: $bp-small) {
+        height: 1.5rem;
+      }
+    }
+  }
 }

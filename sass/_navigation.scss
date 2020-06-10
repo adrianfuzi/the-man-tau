@@ -1,96 +1,95 @@
 .nav {
+  &__list {
+    text-transform: uppercase;
+    background-color: var(--color-header);
+    list-style: none;
+    font-size: 2.3rem;
+    height: 14.1rem;
+    // margin-top: -10.05rem; // For navbar bottom border
 
-    &__list {
-        text-transform: uppercase;
-        background-color: var(--color-header);
-        list-style: none;
-        font-size: 2.3rem;
-        height: 14.1rem;
-        // margin-top: -10.05rem; // For navbar bottom border
-    
-        display: flex;
-        justify-content: center;
-    
-        clip-path: polygon(0 0%, 255% 0, 0 100%, 0 0);
+    display: flex;
+    justify-content: center;
 
-        @media only screen and (max-width: $bp-small) {
-            position: relative;
-            top: 8.5rem;
-        }
-    
-        @media only screen and (max-width: $bp-small) {
-            font-size: 1.2rem;
-            clip-path: polygon(0 0%, 255% 0, 0 40%, 0 0);
-        }
+    clip-path: polygon(0 0%, 255% 0, 0 100%, 0 0);
 
-        &-sticky {
-            position: fixed;
-            top: 8rem;
-            width: 100%;
-
-            @media only screen and (max-width: $bp-small) {
-                top: 0rem;
-            }
-        }
-    
-        &-sticky + .section {
-            margin-top: 14rem;
-        }
-    
-        &-item {
-            padding: 2rem 3rem;
-            transition: filter 0.2s;
-            cursor: pointer;
-    
-            @media only screen and (max-width: $bp-small) {
-                padding: 1rem;
-            }
-        }
-    
-        &-item:hover {
-            filter: invert(100%);
-        }
-
-        &--sound {
-            position: relative;
-            right: 18rem;
-            top: 2.2rem;
-            cursor: pointer;
-            filter: var(--color-mute-unmute);
-    
-            z-index: 100;
-
-            transition: filter .2s; 
-
-            &:hover {
-                filter: var(--color-mute-unmute-hover);
-            }
-
-            img {
-                width: 2.8rem;
-            }
-
-            @media only screen and (max-width: $bp-large) {
-                display: none;
-            }
-        }
-    
-        &--sound-on {
-            display: none;
-        }
+    @media only screen and (max-width: $bp-small) {
+      position: relative;
+      top: 8.5rem;
     }
 
-    // For navbar bottom border:
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.2rem;
+      clip-path: polygon(0 0%, 255% 0, 0 40%, 0 0);
+    }
 
-    // &__border {
-    //     position: sticky;
-    //     background-color: var(--color-secondary-light);
-    //     height: 10.05rem;
-    
-    //     clip-path: polygon(0 0%, 255% 0, 0 100%, 0 0);
+    &-sticky {
+      position: fixed;
+      top: 8rem;
+      width: 100%;
 
-    //     @media only screen and (max-width: $bp-small) {
-    //         clip-path: polygon(0 0%, 255% 0, 0 60%, 0 0);
-    //     }
-    // }
+      @media only screen and (max-width: $bp-small) {
+        top: 0rem;
+      }
+    }
+
+    &-sticky + .section {
+      margin-top: 14rem;
+    }
+
+    &-item {
+      padding: 2rem 3rem;
+      transition: filter 0.2s;
+      cursor: pointer;
+
+      @media only screen and (max-width: $bp-small) {
+        padding: 1rem;
+      }
+    }
+
+    &-item:hover {
+      filter: invert(100%);
+    }
+
+    &--sound {
+      position: relative;
+      right: 18rem;
+      top: 2.2rem;
+      cursor: pointer;
+      filter: var(--color-mute-unmute);
+
+      z-index: 100;
+
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: var(--color-mute-unmute-hover);
+      }
+
+      img {
+        width: 2.8rem;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        display: none;
+      }
+    }
+
+    &--sound-on {
+      display: none;
+    }
+  }
+
+  // For navbar bottom border:
+
+  // &__border {
+  //     position: sticky;
+  //     background-color: var(--color-secondary-light);
+  //     height: 10.05rem;
+
+  //     clip-path: polygon(0 0%, 255% 0, 0 100%, 0 0);
+
+  //     @media only screen and (max-width: $bp-small) {
+  //         clip-path: polygon(0 0%, 255% 0, 0 60%, 0 0);
+  //     }
+  // }
 }
