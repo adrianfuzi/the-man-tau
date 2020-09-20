@@ -139,6 +139,9 @@ label:active:after {
     position: fixed;
     margin-top: 4rem;
     margin-left: 22rem; }
+    @media only screen and (min-width: 120em) {
+      .header__toggle {
+        margin-left: 42rem; } }
     @media only screen and (max-width: 39.375em) {
       .header__toggle {
         margin-top: 3rem;
@@ -149,6 +152,9 @@ label:active:after {
     padding: 0.8rem 0 0.8rem 7rem;
     font-weight: 700;
     cursor: pointer; }
+    @media only screen and (min-width: 120em) {
+      .header__title {
+        padding-left: 27rem; } }
     @media only screen and (max-width: 39.375em) {
       .header__title {
         font-size: 3.6rem;
@@ -158,23 +164,33 @@ label:active:after {
     list-style: none;
     display: flex;
     padding-right: 7rem; }
+    @media only screen and (min-width: 120em) {
+      .header__social {
+        padding-right: 27rem; } }
     @media only screen and (max-width: 57.5em) {
       .header__social {
         padding-right: 1rem; } }
     .header__social-item {
-      padding: 3rem 2rem;
-      transition: filter 0.2s; }
+      padding: 3rem 2rem; }
+      @media only screen and (max-width: 57.5em) {
+        .header__social-item {
+          padding: 3rem 1.2rem; } }
       @media only screen and (max-width: 39.375em) {
         .header__social-item {
-          padding: 3rem 0.7rem; } }
-    .header__social-item:hover {
-      filter: invert(100%); }
+          padding: 3rem 0.5rem; } }
     .header__social-icon {
+      cursor: pointer;
       height: 3rem;
-      fill: var(--color-text-icons); }
+      fill: var(--color-text-icons);
+      transition: filter 0.2s; }
+      @media only screen and (max-width: 57.5em) {
+        .header__social-icon {
+          height: 2.5rem; } }
       @media only screen and (max-width: 39.375em) {
         .header__social-icon {
-          height: 1.5rem; } }
+          height: 1.3rem; } }
+    .header__social-icon:hover {
+      filter: invert(100%); }
 
 .hero {
   position: relative;
@@ -186,6 +202,9 @@ label:active:after {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65.4rem; }
+  @media only screen and (min-width: 120em) {
+    .hero {
+      background-size: 95.4rem; } }
   @media only screen and (max-width: 72.375em) {
     .hero {
       height: 65.4rem; } }
@@ -302,6 +321,8 @@ label:active:after {
       box-shadow: 0 1.5rem 4rem var(--color-shadow, 0.15);
       transition: transform 0.3s;
       flex-direction: column; }
+      .section__content-card--disc {
+        background-color: #303030; }
       @media only screen and (max-width: 39.375em) {
         .section__content-card:last-child {
           margin-bottom: 7rem; } }
@@ -328,6 +349,9 @@ label:active:after {
     font-family: "Josefin Sans", sans-serif;
     font-size: 2.5rem;
     padding: 0 26rem 0 26rem; }
+    @media only screen and (min-width: 120em) {
+      .section__text {
+        padding: 0 50rem 0 50rem; } }
     @media only screen and (max-width: 72.375em) {
       .section__text {
         padding: 0 16rem 0 16rem; } }

@@ -63,6 +63,10 @@
 
       flex-direction: column;
 
+      &--disc {
+        background-color: #303030;
+      }
+
       &:last-child {
         @media only screen and (max-width: $bp-small) {
           margin-bottom: 7rem;
@@ -100,6 +104,10 @@
     font-family: "Josefin Sans", sans-serif;
     font-size: 2.5rem;
     padding: 0 26rem 0 26rem;
+
+    @media only screen and (min-width: $bp-xxl) {
+      padding: 0 50rem 0 50rem;
+    }
 
     @media only screen and (max-width: $bp-large) {
       padding: 0 16rem 0 16rem;

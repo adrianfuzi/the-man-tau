@@ -15,6 +15,10 @@
     margin-top: 4rem;
     margin-left: 22rem;
 
+    @media only screen and (min-width: $bp-xxl) {
+      margin-left: 42rem;
+    }
+
     @media only screen and (max-width: $bp-small) {
       margin-top: 3rem;
       margin-left: 11rem;
@@ -28,6 +32,10 @@
     font-weight: 700;
     cursor: pointer;
 
+    @media only screen and (min-width: $bp-xxl) {
+      padding-left: 27rem;
+    }
+
     @media only screen and (max-width: $bp-small) {
       font-size: 3.6rem;
       padding-left: 1rem;
@@ -40,30 +48,48 @@
     display: flex;
     padding-right: 7rem;
 
+    @media only screen and (min-width: $bp-xxl) {
+      padding-right: 27rem;
+    }
+
     @media only screen and (max-width: $bp-medium) {
       padding-right: 1rem;
     }
 
     &-item {
       padding: 3rem 2rem;
-      transition: filter 0.2s;
+      // transition: filter 0.2s;
+
+      @media only screen and (max-width: $bp-medium) {
+        padding: 3rem 1.2rem;
+      }
 
       @media only screen and (max-width: $bp-small) {
-        padding: 3rem 0.7rem;
+        padding: 3rem 0.5rem;
       }
     }
 
-    &-item:hover {
-      filter: invert(100%);
-    }
+    // &-item:hover {
+    //   filter: invert(100%);
+    // }
 
     &-icon {
+      cursor: pointer;
       height: 3rem;
       fill: var(--color-text-icons);
+      transition: filter 0.2s;
+
+      @media only screen and (max-width: $bp-medium) {
+        height: 2.5rem;
+      }
 
       @media only screen and (max-width: $bp-small) {
-        height: 1.5rem;
+        height: 1.3rem;
       }
+    }
+
+    &-icon:hover {
+      filter: invert(100%);
     }
   }
 }
