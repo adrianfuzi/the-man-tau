@@ -21,7 +21,12 @@
 
     @media only screen and (max-width: $bp-small) {
       margin-top: 3rem;
-      margin-left: 11rem;
+      margin-left: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-xs) {
+      margin-top: 3rem;
+      margin-left: 7rem;
     }
   }
 
@@ -41,6 +46,11 @@
       padding-left: 1rem;
       padding-right: 1.5rem;
     }
+
+    @media only screen and (max-width: $bp-xs) {
+      margin-top: 0.6rem;
+      font-size: 2.6rem;
+    }
   }
 
   &__social {
@@ -57,11 +67,11 @@
     }
 
     &-item {
-      padding: 3rem 2rem;
+      padding: 3rem 1.3rem;
       // transition: filter 0.2s;
 
       @media only screen and (max-width: $bp-medium) {
-        padding: 3rem 1.2rem;
+        padding: 3rem 0.8rem;
       }
 
       @media only screen and (max-width: $bp-small) {
