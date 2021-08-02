@@ -1,4 +1,7 @@
 .nav {
+  position: relative;
+  z-index: 100;
+
   &__list {
     text-transform: uppercase;
     background-color: var(--color-header);

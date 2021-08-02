@@ -24,7 +24,9 @@
 
   &__content {
     justify-content: center;
-    margin: 1rem 0rem 14rem 0rem;
+    max-width: 150rem;
+    margin: 1rem auto 14rem;
+    // margin: 1rem 0rem 14rem 0rem;
 
     display: flex;
     flex-wrap: wrap;
@@ -103,27 +105,16 @@
     text-align: left;
     font-family: "Josefin Sans", sans-serif;
     font-size: 2.5rem;
-    padding: 0 26rem 0 26rem;
-
-    @media only screen and (min-width: $bp-xxl) {
-      padding: 0 50rem 0 50rem;
-    }
-
-    @media only screen and (max-width: $bp-large) {
-      padding: 0 16rem 0 16rem;
-    }
-
-    @media only screen and (max-width: $bp-medium) {
-      padding: 0 13rem 0 13rem;
-    }
+    margin: 0 6rem;
+    max-width: 130rem;
 
     @media only screen and (max-width: $bp-sm-medium) {
       font-size: 2rem;
     }
 
     @media only screen and (max-width: $bp-small) {
+      margin: 0 2rem;
       font-size: 1.6rem;
-      padding: 0 3rem 0 3rem;
     }
   }
 }
