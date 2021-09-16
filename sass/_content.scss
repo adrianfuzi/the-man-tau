@@ -60,8 +60,8 @@
       max-height: 46.8rem;
       margin: 6rem 2rem;
       font-size: 1.8rem;
-      box-shadow: 0 1.5rem 4rem var(--color-shadow, 0.15);
-      transition: transform 0.3s;
+      box-shadow: 0 0.5rem 2rem var(--color-shadow);
+      transition: transform 0.3s, box-shadow 0.3s;
 
       flex-direction: column;
 
@@ -94,6 +94,7 @@
 
     &-card:hover {
       transform: translateY(-1.5rem) scale(1.03);
+      box-shadow: 0 1rem 4rem var(--color-shadow);
 
       @media only screen and (max-width: $bp-large) {
         transform: none;

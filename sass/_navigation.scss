@@ -8,7 +8,6 @@
     list-style: none;
     font-size: 2.3rem;
     height: 14.1rem;
-    // margin-top: -10.05rem; // For navbar bottom border
 
     display: flex;
     justify-content: center;
@@ -81,18 +80,4 @@
       display: none;
     }
   }
-
-  // For navbar bottom border:
-
-  // &__border {
-  //     position: sticky;
-  //     background-color: var(--color-secondary-light);
-  //     height: 10.05rem;
-
-  //     clip-path: polygon(0 0%, 255% 0, 0 100%, 0 0);
-
-  //     @media only screen and (max-width: $bp-small) {
-  //         clip-path: polygon(0 0%, 255% 0, 0 60%, 0 0);
-  //     }
-  // }
 }
